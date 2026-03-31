@@ -40,7 +40,7 @@ const Settings = () => {
                         <Input
                             value={localUrl}
                             onChange={(e) => setLocalUrl(e.target.value)}
-                            placeholder="http://localhost:8000/"
+                            placeholder="/api"
                         />
                         <p className="text-xs text-slate-500 mt-2">
                             The endpoint where the DeepAuthBlock API is running.

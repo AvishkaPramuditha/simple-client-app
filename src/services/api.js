@@ -21,7 +21,7 @@ export const enrollUser = async ({ baseUrl, apiKey, images, userId }) => {
     });
     formData.append('client_user_id', userId);
 
-    const url = `${baseUrl}api/v1/client-user/enroll`;
+    const url = `${baseUrl}/v1/client-user/enroll`;
     console.log('📤 Enrolling user...');
     console.log('  URL:', url);
     console.log('  User ID:', userId);
@@ -57,7 +57,7 @@ export const verifyUser = async ({ baseUrl, apiKey, images, userId }) => {
     });
     formData.append('client_user_id', userId);
 
-    const url = `${baseUrl}api/v1/client-user/verify`;
+    const url = `${baseUrl}/v1/client-user/verify`;
     console.log('📤 Verifying user...');
     console.log('  URL:', url);
     console.log('  User ID:', userId);
@@ -92,7 +92,7 @@ export const identifyUser = async ({ baseUrl, apiKey, images }) => {
         formData.append('images', blob, `capture-${index}.jpg`);
     });
 
-    const url = `${baseUrl}api/v1/client-user/identify`;
+    const url = `${baseUrl}/v1/client-user/identify`;
     console.log('📤 Identifying user...');
     console.log('  URL:', url);
     console.log('  API Key:', apiKey?.substring(0, 10) + '...');
