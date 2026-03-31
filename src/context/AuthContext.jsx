@@ -3,7 +3,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 const AuthContext = createContext();
 
 const DEFAULT_API_KEY = 'dub_live_mYVrMW46RYqb-zFP2RRmLUhG4a01yKF93v2Y8Nuh3zk';
-const DEFAULT_BASE_URL = 'http://localhost:8000/';
+const DEFAULT_BASE_URL = '/api';
 
 export const AuthProvider = ({ children }) => {
     const [apiKey, setApiKey] = useState(() => {
